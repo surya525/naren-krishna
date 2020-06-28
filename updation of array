@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(void)
+{
+int arr[5]={1,2,3,4,5},num,n1,flag;
+printf("number to be searched is:");
+scanf("%d",&num);
+printf("number to be updated:");
+scanf("%d",&n1);
+for(int i=0;i<5;i++)
+{
+  if(num==arr[i])
+  {
+    arr[i]=n1;
+    flag=1;
+    break;
+  }
+}
+if(flag==1)
+{
+  printf("array is: ");
+  for(int i=0;i<5;i++)
+  {
+    printf("%d ",arr[i]);
+  }
+}
+else
+printf("the element is not in the given array");
+
+  return 0;
+}
